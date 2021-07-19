@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/126294c211.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <script type="module" src="./src/main.js" defer></script>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+    <script>
+        Kakao.init('f47206e32a4a8e52357cbeaefc253a82');
+        Kakao.isInitialized();
+    </script>
+    <link rel="favicon" href="">
+    <title>풍연종합건설</title>
+</head>
+<body>
+    <nav class="navbar-container">
+        <div class="navbar-box">
+            <ul class="menubar-left-box">
+                <li class="menubar-text">회사소개</li>
+                <li class="menubar-text">사업소개</li>
+            </ul>
+            <div class="navbar-logo-box">
+                <img src="./img/logo-removebg.png" alt="" class="logo-img">
+                <span class="logo-text">풍연종합건설</span>
+            </div>
+            <ul class="menubar-right-box">
+                <li class="menubar-text">사업실적</li>
+                <li class="menubar-text">견적문의</li>
+            </ul>
+            
+        </div>
+        <div class="user-info-state">
+            <img class="profil-img">
+            <div class="nickname"></div>
+            <button type="button" class="kakao-logout-btn">로그아웃</button>
+        </div>
+        <div class="kakao-login-btn">
+            <img src="./img/kakao_login_btn.png" alt="로고이미지" width="222">
+        </div>
+        <div class="top-position-btn">
+            <i class="fas fa-arrow-circle-up"></i>
+        </div>
+    </nav>
+    <section class="companyIntro-container">
+        <h1 class="conpanyIntro-title">회사소개</h1>
+        <nav class="menu-tap">
+            <ul class="menu-tap-list">
+                <li class="menu-tap-text" data-link="ceo">CEO소개</li>
+                <li>/</li>
+                <li class="menu-tap-text" data-link="idea">이념</li>
+                <li>/</li>
+                <li class="menu-tap-text" data-link="soul">정신</li>
+                <li>/</li>
+                <li class="menu-tap-text" data-link="vision">비전</li>
+            </ul>
+        </nav>
+        <div class="information-box ceo active">
+            <img src="./img/ceoIntro-img.png" alt="이미지 없음" width="100%">
+            <div class="information-text">
+                <p>
+                    건설을 사랑하여 이 일에 일생을 바치고자 다짐하여 실력 연마에 매진하고 있는 기술자들의 공동체입니다.
+                </p> 
+                <p>
+                    올바른 건설기술이 현장에서 정확하게 적용되도록 하는 것이 양식(良識)을 갖춘 참 기술자의 책무(責務)임을 깊이 느끼고 있습니다.
+                </p> 
+                <p>
+                    저희들이 담당하고 있는 일에서부터 이를 실천 함으로써 건설산업의 내실있는 발전에 보탬이 되고자 합니다. 모범적이고 훌륭한 회사로 성장할 수 있도록 부단히 노력하겠사오니 많은 지도와 편달을 부탁드립니다.
+                </p> 
+
+
+
+            </div>
+        </div>
+        <div class="information-box idea">
+            <div class="idea-container">
+                <div class="idea-box">
+                    <div class="idea-box-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h1 class="idea-box-title">건강(health)</h1>
+                    <span class="idea-box-text">
+                        자연은 각자 갖고 있는 특성이 달라서 그 다름을 인정해주어야 합니다. 다름과 다름을 모아 좋은 건축을 만들어내는 것
+                    </span>
+                </div>
+                <div class="idea-box">
+                    <div class="idea-box-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    
+                    <h1 class="idea-box-title">조화(harmony)</h1>
+                    <span class="idea-box-text">
+                        자연이 사람의 인식을 바꾸고 그 몇 사람이 다시 몇 사람의 생각을 바꾸면서 서서히 변화하는 것.
+                    </span>
+                </div>
+                <div class="idea-box">
+                    <div class="idea-box-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h1 class="idea-box-title">안전(safety)</h1>
+                    <span class="idea-box-text">
+                        건축이 생명력을 가지려면 살아 있는 생명이 먼저 존중받고 그 다음에 건축물이 들어가야 한다.
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="information-box soul">
+            <div class="soul-box">
+                <div class="soul-box-img">
+                    <img src="./img/soul-1.png" alt="이미지없음" width="100%">
+                </div>
+                <div class="soul-box-text-box">
+                    <h1 class="soul-box-title">주택인격주의</h1>
+                    <sapn class="soul-box-text">차세대 지능형 아파트를 지향하는 세영, 미래 세영아파트는 설계자재가
+                        지능적으로 이루어집니다. 손이 선반까지 닿는 거리의 지능적 조절,
+                        보폭을 생각하는 코너설계 등 인체구조를 닮은 유기체적 설계로
+                        사람이 주거 공간에 맞추는 것이 아니라
+                        주거공간이 사람의 활동을 인체공학적으로 설계합니다.</sapn>
+                </div>
+            </div>
+            <div class="soul-box">
+                <div class="soul-box-text-box">
+                    <h1 class="soul-box-title">환경중심주의</h1>
+                    <sapn class="soul-box-text">오늘의 행복과 웃음을 다음 세대까지 물려준다는 마음가짐으로
+                    작은 부분 하나에도 정성을 다해 집을 짓습니다.
+                    자연사랑! 인간사랑!의 기업이념을 바탕으로 자연과 호흡하는 공간을 창조하는 세영, 세영의 환경사랑은 변하지 않습니다.</sapn>
+                </div>
+                <div class="soul-box-img">
+                    <img src="./img/soul-2.png" alt="이미지 없음" width="100%">
+                </div>
+            </div>
+            <div class="soul-box">
+                <div class="soul-box-img">
+                    <img src="./img/soul-3.png" alt="이미지없음" width="100%">
+                </div>
+                <div class="soul-box-text-box">
+                    <h1 class="soul-box-title">생활중심주의</h1>
+                    <sapn class="soul-box-text">컴퓨터로 분석, 기획한 인간중심적 설계,
+                    주거생활과 보조공간의 엄격한 구분과 원활한 연계를 통해
+                    생활중심주의를 실현합니다.
+                    가족 구성원 누구나가 만족하는 독립된 개인공간과 공동생활을 통해 보다 편리한 생활을 약속드립니다.</sapn>
+                </div>
+            </div>
+        </div>
+        <div class="information-box vision">
+            <img src="./img/vision-img.png" alt="이미지없음" height="100%">
+        </div>
+    </section>
+    <section class="businessIntro-container">
+        <h1 class="businessIntro-title">사업소개</h1>
+        <div class="businessIntro-box">
+            <ul class="businessIntro-menu-list">
+                <li class="businessIntro-item">
+                    <sapn class="businessIntro-item-icon">
+                        <i class="fas fa-hard-hat"></i>
+                    </sapn>
+                    <h1 class="businessIntro-item-title">건축</h1>
+                    <div class="businessIntro-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora officiis rerum voluptatum reprehenderit esse, corrupti debitis aliquam amet? Maiores, dolores autem? Facere sapiente vel et quia doloribus iure. Vel, doloribus?</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="bisinessResult-container">
+        <h1 class="bisinessResult-title">사업실적</h1>
+        <h2 class="bisinessResult-subtitle">카카오톡을 통해 쉽게 견적문의와 채널을 통해 정보를 받아 볼 수 있습니다.</h2>
+        <div class="bisinessResult-box">
+            <ul class="bisinessResult-list">
+                <li class="bisinessResult-items">
+                    <div class="bisinessResult-item">
+                        <img src="./img/item01.jpg" alt="이미지 없음" class="bisinessResult-item-photo" height="100%" width="100%">
+                        <div class="bisinessResult-item-info">
+                            <ol class="item-info-list">
+                                <li class="item-info-text">공사명 : 영평동 이디연</li>
+                                <li class="item-info-text">공사기간 : 20XX.01~20XX.5</li>
+                                <li class="item-info-text">위치 : 제주 제주시 기와1길38</li>
+                                <li class="item-info-text">총 세대수 : 50세대</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="bisinessResult-title-box">
+                        <h2 class="bisinessResult-items-title">영평동 이디연</h2>
+                    </div>
+                </li>
+                <li class="bisinessResult-items">
+                    <div class="bisinessResult-item">
+                        <img src="./img/item02.jpeg" alt="이미지 없음" class="bisinessResult-item-photo" width="100%" height="100%">
+                        <div class="bisinessResult-item-info">
+                            <ol class="item-info-list">
+                                <li class="item-info-text">공사명 : 도평동 이디연</li>
+                                <li class="item-info-text">공사기간 : 20XX.01~20XX.5</li>
+                                <li class="item-info-text">위치 : </li>
+                                <li class="item-info-text">총 세대수 : 36세대</li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="bisinessResult-title-box">
+                        <h2 class="bisinessResult-items-title">도평동 이디연</h2>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="contact-container">
+        <h1 class="contact-title">견적문의</h1>
+        <h2 class="contact-subtitle">카카오톡을 통해 쉽게 견적문의와 채널을 통해 정보를 받아 볼 수 있습니다.</h2>
+        <div class="contact-box">
+            <div class="kakao-chat-btn">
+                <img src="./img/question_large_yellow_pc.png"
+                />
+            </div>
+            <div class="kakao-add-btn">
+                <img src="./img/channel_add_large.png"
+                />
+            </div>
+            
+        </div>
+    </section>
+    <footer class="footer-container">
+        <div class="footer-logo-box">
+            <img src="./img/logo-removebg.png" alt="로고이미지" class="footer-logo-img">
+            <h1 class="footer-logo-title">풍연종합건설(주)</h1>
+        </div>
+        <div class="footer-info-box">
+            <h3 class="footer-info-text">대표이사 : 오용태 / 사업자등록번호 : 616 - 81  -35114</h3>
+            <h3 class="footer-info-text">주소 : 제주 제주시 기와1길38, A동 지하 101호</h3>
+            <h3 class="footer-info-text">Tel) 064-713-0499  / Fax) 064-749-9690</h3>
+            <h3 class="footer-info-text">COPYRIGHT (c) 2020 BY POONGYEON CO,. LTD ALL Rights Reserved.</h3>
+        </div>
+    </footer>
+</body>
+</html>  
