@@ -2,7 +2,7 @@ export default class KakaoAuth {
 
   loginWithKakao() {
     Kakao.Auth.authorize({
-      redirectUri: 'http://127.0.0.1:5500/login.html'
+      redirectUri: 'https://kug2001.github.io/poongyeon/login.html'
     });
 
   }
@@ -14,7 +14,7 @@ export default class KakaoAuth {
     }
     Kakao.Auth.logout(() => {
       alert('로그아웃이 되었습니다.');
-      window.location.reload("http://127.0.0.1:5500");
+      window.location.reload("https://kug2001.github.io/poongyeon/");
     })
   }
 }
